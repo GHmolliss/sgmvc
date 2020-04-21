@@ -12,10 +12,10 @@
 
 /* URL routing, use preg_replace() compatible syntax */
 $config['routing']['search'] = [
-    //'!/user/(\d+)!'
+    '!/user/(\d+)!'
 ];
 $config['routing']['replace'] = [
-    //'/index/index-user/${1}'
+    '/index/index/${1}'
 ];
 
 $config['prefix_controller'] = 'Controller';

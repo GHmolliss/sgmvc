@@ -144,12 +144,12 @@ class TinyMVC
     /**
      * setup url routing for tmvc
      *
-     * @access    public
+     * @access public
      */
     public function setupRouting()
     {
         if (!empty($this->config['routing']['search']) && !empty($this->config['routing']['replace']))
-            echo $this->path_info = preg_replace(
+            $this->path_info = preg_replace(
                 $this->config['routing']['search'],
                 $this->config['routing']['replace'],
                 $this->path_info);
@@ -261,7 +261,7 @@ class TinyMVC
      *
      * get/set the tmvc object instance(s)
      *
-     * @access    public
+     * @access public
      * @param object $new_instance reference to new object instance
      * @param string $id object instance id
      * @return  object $instance reference to object instance
